@@ -15,8 +15,21 @@ function App() {
 
   const handlerCheckBox = (e, todo) => {
     const todoIndex = data.findIndex((t) => t.id === todo.id);
+
+    
     data[todoIndex].completed = e.target.checked;
     setData((prev) => [...prev]);
+
+    // OR =======>
+
+    // setData((prev) => {
+    //   const clone = [...prev];
+    //   clone[todoIndex] = {
+    //     ...clone[todoIndex],
+    //     completed: e.target.checked,
+    //   };
+    //   return clone;
+    // });
   };
   const logsHandler = (completed = "All") => {
     // لیستی از تودو های چک خورده و چک نخورده بدون در نظر گرفتن تمامی تودو ها
