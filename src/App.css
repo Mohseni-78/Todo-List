@@ -1,0 +1,40 @@
+.App{
+padding: 2rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form div{
+    padding: 10px;
+}
+form .formControl{
+    margin-left: 10px;
+    cursor: pointer;
+}
+ .btnGroup{
+    position: fixed;
+    top: 50%;
+}
+ .btn{
+    border:0;
+    outline: 0;
+    padding: 10px 1.2rem;
+    border-radius: 12px;
+    color: aliceblue;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+
+}
+ .btn:nth-child(1){
+    background: rgb(29, 29, 107);
+}
+ .btn:nth-child(2){
+    background: rgb(105, 16, 16);
+}
+.btn:nth-child(3){
+   background: rgb(9, 143, 65);
+}
